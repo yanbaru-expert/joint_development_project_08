@@ -9,6 +9,10 @@ class UsersController < ApplicationController
         # Strong Parameter の記述
         User.create(user_params)
     end
+    def destroy
+        user = User.find(params[:id])
+        user.destroy
+    end
     def edit
         @user = User.find(params[:id])
     end
