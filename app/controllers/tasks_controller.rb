@@ -33,3 +33,5 @@ private
 def task_params
     params.require(:task).permit(:title, :content)
 end
+
+end
